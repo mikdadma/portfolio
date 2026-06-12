@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "TuyF-PmoB8Jm1kxrO",
+      });
+   })();
+</script>
+
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <nav>
+     <div class="bar">
+        <div> <img src="logo.jpeg" alt="ma logo" style="width: 45px;"></div>
+          <div class="space">   
+           <a id="ho" href="#section1">Home</a>
+            <a href="#section2">Skill</a>
+            <a href="#section3">About</a>
+            <a href="#section4">contact</a>
+           <a href="resume.pdf" download class="bu"> <button >Resume<i class="fa-solid fa-download"></i></button></a>
+           
+          </nav>   
+           
+        </div>
+      </div>  
+      <section id="section1" class="home">
+        <div class="sin" >
+            <h1>Hi it's <span style="color: rgb(5, 233, 233);">MIKDAD,</span> </h1>
+            <h3>Frontend Developer</h3>
+            <p><i>I am a Frontend Developer and a BSc Mathematics student. I love building responsive and modern websites using HTML, CSS and javascript</i></p>
+        </div>
+        <div >
+             <div class="ll"></div>
+            <img  src="stage.jpeg" alt="mikku" >
+            <div class="down"></div>
+        </div>
+      </section>
+
+     <section id="section2" class="two"  >
+        <div class="shb">
+            <div>
+            <h1 style="color:  aqua;">#My Skills</h1>
+            <h4>Tech Stack I Work With</h4>
+          </div>
+     <br>  <div class="skill">
+           <div id="html">HTML</div>
+            <div id="css">CSS</div>
+        </div>   </div>
+     </section>
+
+     <section id="section3" class="three" >
+       <br> <div class="about">
+           <div class="hed"> <h1 style="color: aqua; font-size: 65px;">#About</h1>
+            <p style= font-size:16px;><i>
+
+I’m a passionate Frontend Developer and BSc Mathematics student who loves creating modern, responsive, and user-friendly websites. I enjoy turning ideas into interactive digital experiences using HTML, CSS, JavaScript, and modern web technologies.
+
+I focus on building clean designs, smooth user interfaces, and responsive layouts that work perfectly across all devices. Along with frontend development, my mathematics background helps me improve my logical thinking and problem-solving skills.
+
+I’m always eager to learn new technologies, improve my coding skills, and work on creative projects that challenge me to grow as a developer</i>
+</p>
+</div><div id="clg">
+    <h1 style="color: rgb(26, 133, 133);"><i id="icon" class="fa-solid fa-graduation-cap"></i>Education</h1>
+    <h4>BSC in MATHEMATICS</h4>
+    <P><i class="fa-solid fa-building-columns" style="color:rgba(4, 133, 239, 0.616) ;"></i>Mahatma Gandhi College Irtty</P>
+    <p><i class="fa-regular fa-building" style="color:rgba(4, 133, 239, 0.616) ;"></i>Kannur Univercity</p>
+    <p><i class="fa-solid fa-calendar"></i>2021-2024</p>
+</div>
+
+<div><img  id=pic src="working.jpeg" alt="pic">
+
+        </div></div>
+     </section>
+
+    <section>
+      <div class="contact" id="section4">
+        <div id="get"><h2 style="font-size: 35px; color: aqua;">Get In Touch</h2>
+        <form><div>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" placeholder="Enter Your Name..." required>
+        </div><br>
+        <div>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" placeholder="Enter Your Email " required>
+          </div>
+         <div ><br>
+          <label for="text">How can i help?</label><br>
+          <input class="fly" type="text" id="text" placeholder="Tell your message..." required>
+         </div> 
+        <div><br>
+          <button type="button" onclick="sendMail()">Get In Touch <i class="fa-brands fa-telegram"></i></button>
+        </div> 
+        <div ><br>
+          <a  href="https://www.instagram.com/mikdad._.12?igsh=NXFzd2ZzaWFlNDFj&utm_source=qr"><i  class="fa-brands fa-instagram"></i></a>
+          <a href="https://call.whatsapp.com/video/fU26sXttREHphFHbwda30x"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/18ut84ev4q/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </form></div>
+       <div id="let">
+          <h1 style="color: aqua;">Let's Connect</h1>
+          <h5>Let's Talk for Something Special</h5>
+          <div>
+          <a href="mailto:mikdadbinmajeed@gmail.com"><h4><i class="fa-solid fa-envelope"></i>mikdadbinmajeed@gmail.com</h4></a>
+          </div>
+          <div>
+           <a href="tel:7902561139"> <h4><i class="fa-solid fa-phone"></i>7902561139</h4></a>
+          </div>
+       </div> 
+      </div>
+    </section> 
+
+    <footer>
+      <div class="footer">
+          <h5 ><i class="fa-regular fa-copyright"></i> 2026.All rights reserved.</h5>
+          </div>
+    </footer>
+
+</body>
+</html>
